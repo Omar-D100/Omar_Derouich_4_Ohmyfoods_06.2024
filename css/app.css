@@ -165,8 +165,11 @@ body {
   justify-content: center;
   align-items: center;
   position: relative;
+  bottom: 25px;
   background: none;
   border: none;
+  margin: auto;
+  margin-top: 60px;
 }
 .commander-btn span {
   border-radius: 30px;

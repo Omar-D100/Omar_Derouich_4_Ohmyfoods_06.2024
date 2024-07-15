@@ -175,9 +175,11 @@ body {
 .commander-btn {
   @include flex-center;
   position: relative;
+  bottom: 25px;
   background: none;
   border: none;
-
+  margin: auto;
+  margin-top: 60px;
 
   span {
     border-radius: 30px;
