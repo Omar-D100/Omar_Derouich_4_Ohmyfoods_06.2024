@@ -41,6 +41,16 @@ body {
   border: none;
   background: none;
 }
+.principal-display-menu .heart-icon:focus {
+  background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+  background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+  background-size: auto 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.principal-display-menu .heart-icon:focus .fa-heart {
+  font-weight: bold;
+}
 .principal-display-menu .principal-title {
   display: flex;
   justify-content: center;
@@ -382,6 +392,16 @@ body {
   align-items: center;
   border: none;
   background: none;
+}
+#restaurants .restaurants-box-cards .box-card-logo:focus {
+  background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+  background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+  background-size: auto 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#restaurants .restaurants-box-cards .box-card-logo:focus .fa-heart {
+  font-weight: bold;
 }
 
 /*--------------------------------------------------------------

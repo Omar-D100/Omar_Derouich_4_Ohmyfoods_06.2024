@@ -39,6 +39,17 @@ body {
     border: none;
     background: none;
   
+    &:focus{
+      background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+      background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+      background-size: auto 100%;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+  
+      .fa-heart {
+        font-weight: bold;
+      }
+    }
   }
   
 
