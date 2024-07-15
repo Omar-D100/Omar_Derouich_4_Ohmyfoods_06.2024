@@ -270,7 +270,11 @@ body {
   width: 215px;
   margin: 30px 100px 30px 100px;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
-  transition: background-color 0.9s ease-in-out;
+  transition: background-color 0.4s ease-in-out;
+}
+.presentation .restaurant-btn:hover {
+  background-color: #c24da1;
+  color: #ffffff;
 }
 .presentation a {
   color: #ffffff;
