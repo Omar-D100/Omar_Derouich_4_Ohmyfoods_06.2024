@@ -170,6 +170,14 @@ body {
   border: none;
   margin: auto;
   margin-top: 60px;
+  transition: background-color 0.2s ease-in-out;
+}
+.commander-btn:hover {
+  background-color: #c24da1;
+  color: #ffffff;
+  border: none;
+  background: none;
+  cursor: pointer;
 }
 .commander-btn span {
   border-radius: 30px;
@@ -484,7 +492,7 @@ footer ul {
   list-style: none;
   margin-bottom: 0px;
   margin-top: 52px;
-  margin-left: 45px;
+  margin-left: 5px;
 }
 footer li {
   line-height: 26px;
@@ -530,7 +538,7 @@ header {
 header .logo-return {
   font-size: 20px;
   position: relative;
-  left: -245px;
+  right: 220px;
 }
 header img {
   height: 30px;

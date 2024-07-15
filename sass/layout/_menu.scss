@@ -180,6 +180,16 @@ body {
   border: none;
   margin: auto;
   margin-top: 60px;
+  transition: background-color 0.2s ease-in-out;
+  
+
+  &:hover {
+    background-color: $darkrose;
+    color: $white;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
 
   span {
     border-radius: 30px;
