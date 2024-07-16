@@ -301,7 +301,7 @@ body {
   margin-left: 0px;
 }
 .fonctionnement h2 {
-  margin: 20px 10px 35px 20px;
+  margin: 20px 10px 35px 40px;
 }
 
 .foncctionnment-box-child {
@@ -314,6 +314,9 @@ body {
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   padding: 25px 25px 25px 60px;
   transition: background-color 0.3s ease-in-out;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .foncctionnment-box-child:hover {
@@ -441,7 +444,7 @@ body {
     align-items: center;
   }
   .foncctionnment-box-child {
-    width: 27%;
+    width: 30%;
   }
   .restaurants h2 {
     margin: 0PX;

@@ -83,7 +83,7 @@ body {
   margin-left: 0px;
 
   h2 {
-    margin: 20px 10px 35px 20px;
+    margin: 20px 10px 35px 40px;
   }
 }
 
@@ -99,6 +99,9 @@ body {
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   padding: 25px 25px 25px 60px;
   transition: background-color 0.3s ease-in-out;
+  list-style: none;
+  display: flex;
+  align-items: center;
 }
 
 .foncctionnment-box-child:hover{
@@ -243,7 +246,7 @@ body {
   }
   
   .foncctionnment-box-child {
-    width: 27%;
+    width: 30%;
   }
 
 
