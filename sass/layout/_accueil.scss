@@ -242,11 +242,15 @@ body {
   }  
 
   .fonctionnement-box {
-    @include flex-between
+    @include flex-between;
+    max-width: 1040px;
+    margin: auto;
+    padding: 0px;
+    
   }
   
   .foncctionnment-box-child {
-    width: 30%;
+    width: 31%;
   }
 
 

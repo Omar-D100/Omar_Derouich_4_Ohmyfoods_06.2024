@@ -442,9 +442,12 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1040px;
+    margin: auto;
+    padding: 0px;
   }
   .foncctionnment-box-child {
-    width: 30%;
+    width: 31%;
   }
   .restaurants h2 {
     margin: 0PX;
