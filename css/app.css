@@ -69,8 +69,8 @@ header {
 }
 header .logo-return {
   font-size: 20px;
-  position: relative;
-  right: 220px;
+  position: absolute;
+  left: 30px;
 }
 header img {
   height: 30px;
