@@ -126,7 +126,8 @@ body {
 }
 .presentation h1 {
   font-size: 1.9em;
-  font-weight: bold;
+  font-weight: 950;
+  font-family: roboto;
 }
 .presentation p {
   color: grey;
@@ -168,6 +169,8 @@ body {
   width: 95%;
 }
 .fonctionnement h2 {
+  font-size: 1.7em;
+  font-weight: 950;
   margin-bottom: 35px;
 }
 
@@ -216,18 +219,18 @@ body {
 /*--------------------------------------------------------------
   -----------------------------restaurant--------------------------
   ----------------------------------------------------------------*/
-.restaurants {
+#restaurants {
   width: 100%;
   height: 100%;
   background-color: #f2f2f2;
   padding: 20px;
 }
-.restaurants h2 {
+#restaurants h2 {
   font-size: 1.7em;
-  font-weight: bold;
+  font-weight: 950;
   padding: 10px;
 }
-.restaurants .restaurants-box-cards {
+#restaurants .restaurants-box-cards {
   margin-bottom: 30px;
   background-color: white;
   border-radius: 20px;
@@ -236,26 +239,26 @@ body {
   position: relative;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
 }
-.restaurants .restaurants-box-cards p {
+#restaurants .restaurants-box-cards p {
   font-size: 1em;
   font-weight: 100;
 }
-.restaurants .restaurants-box-cards h3 {
+#restaurants .restaurants-box-cards h3 {
   font-size: 1.1em;
   font-weight: 950;
 }
-.restaurants .restaurants-box-cards img {
+#restaurants .restaurants-box-cards img {
   height: 180px;
   width: 100%;
   border-top-left-radius: 25px;
   border-top-right-radius: 25px;
   object-fit: cover;
 }
-.restaurants .restaurants-box-cards .box-card-txt {
+#restaurants .restaurants-box-cards .box-card-txt {
   line-height: 10px;
   margin: 10px;
 }
-.restaurants .restaurants-box-cards .card-green-square {
+#restaurants .restaurants-box-cards .card-green-square {
   background-color: #99e2d0;
   top: 30px;
   right: -25px;
@@ -267,7 +270,7 @@ body {
   padding: 7px 10px 7px 10px;
   transform: translate(-50%, -50%);
 }
-.restaurants .restaurants-box-cards .box-card-logo {
+#restaurants .restaurants-box-cards .box-card-logo {
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -284,14 +287,14 @@ body {
   border: none;
   background: none;
 }
-.restaurants .restaurants-box-cards .box-card-logo:focus {
+#restaurants .restaurants-box-cards .box-card-logo:focus {
   background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
   background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
   background-size: auto 100%;
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.restaurants .restaurants-box-cards .box-card-logo:focus .fa-heart {
+#restaurants .restaurants-box-cards .box-card-logo:focus .fa-heart {
   font-weight: bold;
 }
 
@@ -304,6 +307,7 @@ body {
   }
   .fonctionnement {
     max-width: 1030px;
+    margin-left: 0px;
   }
   .fonctionnement-box {
     display: flex;
@@ -311,7 +315,7 @@ body {
     align-items: center;
     column-gap: 30px;
   }
-  .restaurants h2 {
+  #restaurants h2 {
     margin: 0PX;
   }
   .restaurants-box {
@@ -543,31 +547,6 @@ body {
     margin: auto;
   }
 }
-/* Spinner 1 */
-.spinner::before {
-  content: "";
-  box-sizing: border-box;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  margin-top: -30px;
-  margin-left: -30px;
-  border-radius: 50%;
-  border: 6px solid lightgray;
-  border-top-color: #ff79da;
-  border-bottom-color: #9356dc;
-  animation: spinner 1s linear both;
-  z-index: 999999;
-  animation-duration: 3s;
-}
-
-.body {
-  animation: body 0s both;
-  animation-duration: 3s;
-}
-
 /*---------------------------------------------------------
   -------------------green-square animation-----------------
   ----------------------------------------------------------*/
@@ -628,4 +607,28 @@ body {
     transform: rotate(360deg);
     opacity: 0;
   }
+}
+/* Spinner 1 */
+.spinner::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: -30px;
+  margin-left: -30px;
+  border-radius: 50%;
+  border: 6px solid lightgray;
+  border-top-color: #ff79da;
+  border-bottom-color: #9356dc;
+  animation: spinner 1s linear both;
+  z-index: 999999;
+  animation-duration: 3s;
+}
+
+.body {
+  animation: body 0s both;
+  animation-duration: 3s;
 }/*# sourceMappingURL=app.css.map */
