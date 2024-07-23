@@ -288,7 +288,6 @@ body {
   background: none;
 }
 #restaurants .restaurants-box-cards .box-card-logo:focus {
-  background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
   background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
   background-size: auto 100%;
   background-clip: text;
@@ -399,6 +398,7 @@ body {
 
 .menu-box {
   margin-bottom: 60px;
+  animation: scale-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
 }
 .menu-box h2 {
   font-size: 1em;
@@ -414,29 +414,25 @@ body {
 .menu-box p {
   font-size: 0.9em;
 }
+.menu-box:nth-child(3n+1) {
+  animation-delay: 0s;
+}
+.menu-box:nth-child(3n+2) {
+  animation-delay: 0.3s;
+}
+.menu-box:nth-child(3n+3) {
+  animation-delay: 0.6s;
+}
 
 .menu-box-element {
   background-color: #ffffff;
   border-radius: 15px;
   width: 100%;
   height: 75px;
-  animation: scale-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
   box-shadow: 1px 1px 10px 5px rgba(187, 187, 187, 0.589);
   margin-bottom: 20px;
   overflow: hidden;
   text-overflow: ellipsis;
-}
-.menu-box-element:nth-child(4n+1) {
-  animation-delay: 0s;
-}
-.menu-box-element:nth-child(4n+2) {
-  animation-delay: 0.3s;
-}
-.menu-box-element:nth-child(4n+3) {
-  animation-delay: 0.6s;
-}
-.menu-box-element:nth-child(4n+4) {
-  animation-delay: 0.9s;
 }
 .menu-box-element a {
   display: flex;
@@ -550,14 +546,6 @@ body {
 /*---------------------------------------------------------
   -------------------green-square animation-----------------
   ----------------------------------------------------------*/
-@keyframes rotate-center {
-  0% {
-    transform: rotate(0);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
 @keyframes scale-right {
   0% {
     transform: translateX(100px);
@@ -566,20 +554,12 @@ body {
     transform: translateX(0);
   }
 }
-@keyframes slide-right {
-  0% {
-    width: calc(100% - 45px);
-  }
-  100% {
-    width: calc(100% - 110px);
-  }
-}
 /*----------------------------------------------------------------
   -------------------------menu-box animation--------------------------
   ----------------------------------------------------------------*/
 @keyframes scale-top {
   0% {
-    transform: translateY(30px);
+    transform: translateY(100px);
     opacity: 0;
   }
   100% {
