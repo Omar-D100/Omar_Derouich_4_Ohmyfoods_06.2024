@@ -13,12 +13,12 @@
   border: 6px solid lightgray;
   border-top-color: $rose;
   border-bottom-color: $purple;
-  animation: spinner 1s linear both;
+  animation: spinner 2s linear both;
   z-index: 999999;
-  animation-duration: 3s;
+  animation-duration: 2s;
 }
 
 .body {
-  animation: body 0s both;
-  animation-duration: 3s;
+  animation: body 2s both;
+  animation-duration: 2s;
 }

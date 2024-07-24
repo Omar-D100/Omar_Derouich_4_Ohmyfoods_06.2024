@@ -208,7 +208,7 @@ body {
       color: black;
       cursor: pointer;
       background-size: auto 0%;
-      transition: all 500ms linear 0s;
+      transition: all 1s linear 0s;
       font-size: 20px;
       height: 40px;
       width: 40px;
@@ -220,9 +220,8 @@ body {
 
       &:focus {
         background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
-        background-size: auto 100%;
         background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: transparent;
     
         .fa-heart {
           font-weight: bold;

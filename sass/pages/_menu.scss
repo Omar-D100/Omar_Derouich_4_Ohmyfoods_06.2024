@@ -34,23 +34,21 @@ body {
     color: black;
     cursor: pointer;
     background-size: auto 0%;
-    transition: all 400ms linear 0s;
+    transition: all 1s linear 0s;
     font-size: 25px;
     border: none;
     background: none;
   
-    &:focus{
-      background: -webkit-linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+    &:focus {
       background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
-      background-size: auto 100%;
       background-clip: text;
-      -webkit-text-fill-color: transparent;
-  
+      color: transparent;
       .fa-heart {
         font-weight: bold;
       }
     }
   }
+
   
 
   .principal-title {
@@ -91,14 +89,14 @@ body {
     font-size: 0.9em;
   }
 
-  animation: scale-top 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
-  &:nth-child(3n + 1) {
+  animation: scale-top 5s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  &:nth-child(3n + 3) {
     animation-delay: 0s;
   }
   &:nth-child(3n + 2) {
     animation-delay: 0.3s;
   }
-  &:nth-child(3n + 3) {
+  &:nth-child(3n + 1) {
     animation-delay: 0.6s;
   }
 }
@@ -143,10 +141,6 @@ body {
     transform: scale(1.05);
     .animation-square {
       animation: scale-right 0.8s both;
-
-      .fa-check-circle {
-        animation: rotate-center 0.6s ease-in-out both;
-      }
     }
     .menu-box-element-txt {
       animation: slide-right 0.8s both;
