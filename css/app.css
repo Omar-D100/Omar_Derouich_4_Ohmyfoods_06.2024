@@ -137,8 +137,8 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 30px;
-  background-color: #ff79da;
-  background-image: linear-gradient(transparent, #9356dc);
+  background-color: grey;
+  background-image: linear-gradient(to top, #9356dc, #ff79da);
   color: #ffffff;
   height: 50px;
   width: 215px;
@@ -147,9 +147,12 @@ body {
   transition: background-color 0.4s ease-in-out;
 }
 .presentation .restaurant-btn:hover {
-  background-color: #c24da1;
   color: #ffffff;
+  transform: scale(1.02);
+  transition: 1s;
   cursor: pointer;
+  box-shadow: 1px 1px 10px 5px rgb(223, 222, 222);
+  opacity: 0.7;
 }
 .presentation a {
   color: #ffffff;
@@ -288,9 +291,11 @@ body {
   background: none;
 }
 #restaurants .restaurants-box-cards .box-card-logo:focus {
+  transition: 0.4s;
   background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+  background-size: auto 100%;
   background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 #restaurants .restaurants-box-cards .box-card-logo:focus .fa-heart {
   font-weight: bold;
@@ -362,15 +367,17 @@ body {
   color: black;
   cursor: pointer;
   background-size: auto 0%;
-  transition: all 1s linear 0s;
+  transition: all 400ms linear 0s;
   font-size: 25px;
   border: none;
   background: none;
 }
 .principal-display-menu .heart-icon:focus {
+  transition: 0.4s;
   background: linear-gradient(to top, #e72c83 0%, #a742c6) no-repeat;
+  background-size: auto 100%;
   background-clip: text;
-  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 .principal-display-menu .heart-icon:focus .fa-heart {
   font-weight: bold;
@@ -411,13 +418,13 @@ body {
 .menu-box p {
   font-size: 0.9em;
 }
-.menu-box:nth-child(3n+3) {
+.menu-box:nth-child(3n+1) {
   animation-delay: 0s;
 }
 .menu-box:nth-child(3n+2) {
   animation-delay: 0.3s;
 }
-.menu-box:nth-child(3n+1) {
+.menu-box:nth-child(3n+3) {
   animation-delay: 0.6s;
 }
 
@@ -431,7 +438,7 @@ body {
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-box-element a {
+.menu-box-element .menu-box-element-child {
   display: flex;
 }
 .menu-box-element .animation-square {
@@ -445,7 +452,6 @@ body {
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   transform: scaleX(0);
-  transform-origin: right;
 }
 .menu-box-element .animation-square .fa-check-circle {
   color: #ffffff;
@@ -456,6 +462,7 @@ body {
 }
 .menu-box-element:hover {
   transform: scale(1.05);
+  cursor: pointer;
 }
 .menu-box-element:hover .animation-square {
   animation: scale-right 0.8s both;
@@ -495,13 +502,6 @@ body {
   transition: background-color 0.2s ease-in-out;
   font-size: 1rem;
 }
-.commander-btn:hover {
-  background-color: #c24da1;
-  color: #ffffff;
-  border: none;
-  background: none;
-  cursor: pointer;
-}
 .commander-btn span {
   border-radius: 30px;
   display: flex;
@@ -516,8 +516,12 @@ body {
   transition: background-color 0.9s ease-in-out;
 }
 .commander-btn span:hover {
-  background-color: #c24da1;
   color: #ffffff;
+  transform: scale(1.02);
+  transition: 1s;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px 5px rgb(223, 222, 222);
+  opacity: 0.7;
 }
 
 /*---------------------------------------------------
